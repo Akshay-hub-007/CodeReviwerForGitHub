@@ -1,4 +1,4 @@
-import request
+import requests
 
 def to_raw_url(github_url: str) -> str:
     """Convert a GitHub file URL to a raw URL."""
@@ -13,8 +13,9 @@ def to_raw_url(github_url: str) -> str:
 
 def fetch_content(url: str) -> str:
     """Fetch content from a URL."""
-    response = requests.get(url, timeout=10)
-
+    print(url)
+    response = requests.get(url)
+    print(response)
     if response.status_code != 200:
         raise Exception(
             f"Failed to fetch file. Status code: {response.status_code}"
