@@ -35,7 +35,7 @@ def render_bullet_list(items: List[str]):
     for item in items:
         st.markdown(f"- {item}")
 
-# ── Page config ───────────────────────────────────────────────────────────────
+
 
 st.set_page_config(page_title="AI Code Reviewer", page_icon="🔍", layout="wide")
 

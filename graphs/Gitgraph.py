@@ -142,7 +142,3 @@ graph.add_edge("get_code","make_review")
 graph.add_edge("make_review",END)
 
 workflow = graph.compile()
-
-output = workflow.invoke({"url":"https://github.com/Akshay-hub-007/microservices/blob/main/order-service/src/main/java/com/akshay/order_service/controller/OrderController.java"})
-
-print(output)
